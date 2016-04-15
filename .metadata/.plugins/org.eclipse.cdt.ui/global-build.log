@@ -1,33 +1,187 @@
-19:33:50 **** Build of configuration Debug for project HelloWorld ****
+10:41:20 **** Build of configuration Debug for project Hp15c_calculator ****
 make all 
-Building file: ../src/HelloWorld.c
+Building file: ../src/main.c
 Invoking: Cygwin C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.o" -o "src/HelloWorld.o" "../src/HelloWorld.c"
-Finished building: ../src/HelloWorld.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:11:10: warning: unused variable 'i' [-Wunused-variable]
+   int n, i=0;
+          ^
+Finished building: ../src/main.c
  
-Building target: HelloWorld.exe
+Building file: ../src/model.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/model.d" -MT"src/model.o" -o "src/model.o" "../src/model.c"
+Finished building: ../src/model.c
+ 
+Building file: ../src/view.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/view.d" -MT"src/view.o" -o "src/view.o" "../src/view.c"
+Finished building: ../src/view.c
+ 
+Building target: Hp15c_calculator.exe
 Invoking: Cygwin C Linker
-gcc  -o "HelloWorld.exe"  ./src/HelloWorld.o   
-Finished building target: HelloWorld.exe
+gcc  -o "Hp15c_calculator.exe"  ./src/main.o ./src/model.o ./src/view.o   
+Finished building target: Hp15c_calculator.exe
  
-19:33:55 **** Incremental Build of configuration Debug for project HelloWorld ****
+10:41:23 **** Incremental Build of configuration Debug for project Hp15c_calculator ****
 make all 
 make: Nothing to be done for 'all'.
-19:37:56 **** Incremental Build of configuration Debug for project HelloWorld ****
+10:42:33 **** Incremental Build of configuration Debug for project Hp15c_calculator ****
 make all 
-Building file: ../src/HelloWorld.c
+Building file: ../src/main.c
 Invoking: Cygwin C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.o" -o "src/HelloWorld.o" "../src/HelloWorld.c"
-Finished building: ../src/HelloWorld.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:11:10: warning: unused variable 'i' [-Wunused-variable]
+   int n, i=0;
+          ^
+Finished building: ../src/main.c
  
-Building target: HelloWorld.exe
+Building target: Hp15c_calculator.exe
 Invoking: Cygwin C Linker
-gcc  -o "HelloWorld.exe"  ./src/HelloWorld.o   
-Finished building target: HelloWorld.exe
+gcc  -o "Hp15c_calculator.exe"  ./src/main.o ./src/model.o ./src/view.o   
+Finished building target: Hp15c_calculator.exe
  
-19:38:04 **** Incremental Build of configuration Debug for project HelloWorld ****
+10:42:58 **** Incremental Build of configuration Debug for project Hp15c_calculator ****
+make all 
+Building file: ../src/main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: Hp15c_calculator.exe
+Invoking: Cygwin C Linker
+gcc  -o "Hp15c_calculator.exe"  ./src/main.o ./src/model.o ./src/view.o   
+Finished building target: Hp15c_calculator.exe
+ 
+10:43:13 **** Incremental Build of configuration Debug for project Hp15c_calculator ****
+make all 
+Building file: ../src/main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: Hp15c_calculator.exe
+Invoking: Cygwin C Linker
+gcc  -o "Hp15c_calculator.exe"  ./src/main.o ./src/model.o ./src/view.o   
+Finished building target: Hp15c_calculator.exe
+ 
+10:44:37 **** Incremental Build of configuration Debug for project Hp15c_calculator ****
+make all 
+Building file: ../src/main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:11:10: warning: unused variable 'i' [-Wunused-variable]
+   int n, i=0;
+          ^
+Finished building: ../src/main.c
+ 
+Building file: ../src/view.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/view.d" -MT"src/view.o" -o "src/view.o" "../src/view.c"
+../src/view.c: In function 'getInput':
+../src/view.c:7:7: warning: unused variable 'c' [-Wunused-variable]
+  char c;
+       ^
+Finished building: ../src/view.c
+ 
+Building target: Hp15c_calculator.exe
+Invoking: Cygwin C Linker
+gcc  -o "Hp15c_calculator.exe"  ./src/main.o ./src/model.o ./src/view.o   
+Finished building target: Hp15c_calculator.exe
+ 
+10:44:47 **** Incremental Build of configuration Debug for project Hp15c_calculator ****
 make all 
 make: Nothing to be done for 'all'.
-19:38:57 **** Incremental Build of configuration Debug for project HelloWorld ****
+10:45:41 **** Incremental Build of configuration Debug for project Hp15c_calculator ****
+make all 
+Building file: ../src/view.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/view.d" -MT"src/view.o" -o "src/view.o" "../src/view.c"
+../src/view.c: In function 'getInput':
+../src/view.c:7:7: warning: unused variable 'c' [-Wunused-variable]
+  char c;
+       ^
+Finished building: ../src/view.c
+ 
+Building target: Hp15c_calculator.exe
+Invoking: Cygwin C Linker
+gcc  -o "Hp15c_calculator.exe"  ./src/main.o ./src/model.o ./src/view.o   
+Finished building target: Hp15c_calculator.exe
+ 
+10:46:03 **** Incremental Build of configuration Debug for project Hp15c_calculator ****
+make all 
+Building file: ../src/main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:53:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+10:46:26 **** Incremental Build of configuration Debug for project Hp15c_calculator ****
+make all 
+Building file: ../src/main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: Hp15c_calculator.exe
+Invoking: Cygwin C Linker
+gcc  -o "Hp15c_calculator.exe"  ./src/main.o ./src/model.o ./src/view.o   
+Finished building target: Hp15c_calculator.exe
+ 
+10:46:46 **** Incremental Build of configuration Debug for project Hp15c_calculator ****
+make all 
+Building file: ../src/main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:11:10: warning: unused variable 'i' [-Wunused-variable]
+   int n, i=0;
+          ^
+Finished building: ../src/main.c
+ 
+Building target: Hp15c_calculator.exe
+Invoking: Cygwin C Linker
+gcc  -o "Hp15c_calculator.exe"  ./src/main.o ./src/model.o ./src/view.o   
+Finished building target: Hp15c_calculator.exe
+ 
+10:47:23 **** Incremental Build of configuration Debug for project Hp15c_calculator ****
+make all 
+Building file: ../src/view.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/view.d" -MT"src/view.o" -o "src/view.o" "../src/view.c"
+../src/view.c: In function 'getInput':
+../src/view.c:7:7: warning: unused variable 'c' [-Wunused-variable]
+  char c;
+       ^
+Finished building: ../src/view.c
+ 
+Building target: Hp15c_calculator.exe
+Invoking: Cygwin C Linker
+gcc  -o "Hp15c_calculator.exe"  ./src/main.o ./src/model.o ./src/view.o   
+Finished building target: Hp15c_calculator.exe
+ 
+10:47:41 **** Incremental Build of configuration Debug for project Hp15c_calculator ****
+make all 
+Building file: ../src/view.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/view.d" -MT"src/view.o" -o "src/view.o" "../src/view.c"
+../src/view.c: In function 'getInput':
+../src/view.c:7:7: warning: unused variable 'c' [-Wunused-variable]
+  char c;
+       ^
+Finished building: ../src/view.c
+ 
+Building target: Hp15c_calculator.exe
+Invoking: Cygwin C Linker
+gcc  -o "Hp15c_calculator.exe"  ./src/main.o ./src/model.o ./src/view.o   
+Finished building target: Hp15c_calculator.exe
+ 
+10:50:25 **** Incremental Build of configuration Debug for project Hp15c_calculator ****
 make all 
 make: Nothing to be done for 'all'.
