@@ -1,0 +1,46 @@
+/*
+ * Main.c
+ *
+ *  Created on: 03/05/2016
+ *      Author: jimmi
+ */
+#include <stdio.h>
+
+
+struct student
+{
+    char name[100];
+    int studentnr;
+    char assignment[100];
+    char school[50];
+    char course[20];
+};
+int main(){
+    struct student s[10];
+    int i;
+    printf("Enter information of students:\n");
+    for(i=0;i<2;++i)
+    {
+        s[i].studentnr = i+1;
+        printf("\nFor student number %d\n",s[i].studentnr);
+        printf("Enter name: ");
+        scanf("%s", &s[i].name);
+        printf("Enter schoolname: ");
+        scanf("%f", &s[i].school);
+        printf("Enter assignment: ");
+        scanf("%g", &s[i].assignment);
+        printf("Enter cource: ");
+        scanf("%h", &s[i].course);
+        printf("\n");
+    }
+    printf("Displaying information of students:\n\n");
+    for(i=0;i<10;++i)
+    {
+     printf("\nInformation for student number %d:\n",i+1);
+     printf("Name: ");
+     puts(s[i].name);
+     printf("studentnr: %.1f",s[i].studentnr);
+   }
+   return 0;
+}
+

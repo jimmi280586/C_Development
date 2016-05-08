@@ -1,0 +1,7 @@
+17:32:37 **** Clean-only build of configuration Debug for project Assignment2 ****
+make clean 
+rm -rf  ./src/.OldMain.o ./src/assignment.o ./src/course.o ./src/database.o ./src/enrollment.o ./src/fileIO.o ./src/main.o ./src/student.o ./src/teacher.o  ./src/.OldMain.d ./src/assignment.d ./src/course.d ./src/database.d ./src/enrollment.d ./src/fileIO.d ./src/main.d ./src/student.d ./src/teacher.d  Assignment2.exe
+ 
+
+17:32:37 Build Finished (took 199ms)
+

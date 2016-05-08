@@ -1,0 +1,28 @@
+
+#ifndef SRC_INCLUDE_H_
+#define SRC_INCLUDE_H_
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include "assignment.h"
+#include "course.h"
+#include "DB.h"
+#include "enroll.h"
+#include "student.h"
+#include "teacher.h"
+#include "file.h"
+
+typedef struct assignment
+{
+	struct teacher *a_teacher;
+	struct course *a_course;
+	}assignment;
+
+typedef struct assignment_node
+{
+	int count;
+	assignment *current;
+	struct assignment_node *next;
+	}assignment_node;
+
+#endif

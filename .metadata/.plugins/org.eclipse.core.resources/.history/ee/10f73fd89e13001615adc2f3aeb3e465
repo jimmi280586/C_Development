@@ -1,0 +1,90 @@
+
+#ifndef SRC_INCLUDE_H_
+#define SRC_INCLUDE_H_
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include "assignment.h"
+#include "course.h"
+#include "DB.h"
+#include "enroll.h"
+#include "student.h"
+#include "teacher.h"
+#include "file.h"
+
+typedef struct assignment
+{
+	struct teacher *a_teacher;
+	struct course *a_course;
+	}assignment;
+
+typedef struct assignment_node
+{
+	int count;
+	assignment *current;
+	struct assignment_node *next;
+	}assignment_node;
+
+typedef struct course
+{
+	int course_number;
+	char *course_name;
+	int semester_number;
+	}course;
+
+typedef struct course_node
+{
+	int count;
+	course *current;
+	struct course_node *next;
+	}course_node;
+
+typedef struct database{
+	struct student_node *studentList;
+	struct teacher_node *teacherList;
+	struct assignment_node *assignmentList;
+	struct enrollment_node *enrollmentList;
+	struct course_node *courseList;
+}database;
+
+typedef struct enrollment
+{
+	struct student *e_student;
+	struct course *e_course;
+	}enrollment;
+
+typedef struct enrollment_node
+{
+	int count;
+	struct enrollment *current;
+	struct enrollment_node *next;
+	}enrollment_node;
+
+
+typedef struct student
+{
+ 	int student_number;
+ 	char *firstName;
+	}student;
+
+typedef struct student_node
+{
+ 	int count;
+ 	student *current;
+ 	struct student_node *next;
+	}student_node;
+
+typedef struct teacher
+{
+	int teacher_number;
+	char *firstName;
+	}teacher;
+
+typedef struct teacher_node
+{
+	int count;
+	struct teacher *current;
+	struct teacher_node *next;
+	}teacher_node;
+
+#endif

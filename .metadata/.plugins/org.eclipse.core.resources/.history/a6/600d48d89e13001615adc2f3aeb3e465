@@ -1,0 +1,16 @@
+#include"include.h"
+
+student_node *create_student_list();
+
+student *create_student(int student_number, char *firstName);
+
+void add_student(student_node *head, student *newStudent);
+
+int hasStudent(int student_number, student_node *head); 
+
+student *get_student(int student_number, student_node *head);
+
+void print_students(student_node *head);
+
+void print_student(student *myStudent);
+

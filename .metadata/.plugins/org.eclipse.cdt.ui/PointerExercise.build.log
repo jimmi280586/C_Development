@@ -1,6 +1,7 @@
-10:40:56 **** Incremental Build of configuration Debug for project PointerExercise ****
-make all 
-make: Nothing to be done for 'all'.
+17:32:38 **** Clean-only build of configuration Debug for project PointerExercise ****
+make clean 
+rm -rf  ./src/Exercise1.o  ./src/Exercise1.d  PointerExercise.exe
+ 
 
-10:40:56 Build Finished (took 76ms)
+17:32:38 Build Finished (took 149ms)
 

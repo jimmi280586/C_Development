@@ -1,0 +1,28 @@
+
+#include "database.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+void main()
+{
+	database *myDatabase = create_database(); //creates a database and reads from file
+	print_students_db(myDatabase); //prints student from database
+	print_teachers_db(myDatabase); //prints teachers from database
+	print_courses_db(myDatabase); //prints courses from database
+
+	print_all_courses_db(myDatabase, 123456); //prints all courses for this student
+	print_all_courses_db(myDatabase, 123457); //prints all courses for this teacher
+	assign_teacher_db(myDatabase, 123457, 31); //assigns a teacher
+	print_all_courses_db(myDatabase, 123457);//prints all courses from teacher
+	print_all_students_db(myDatabase, 11); //prints all students for course
+
+	printf("\n"); //testing of student removal
+	print_students_db(myDatabase);//prints all students in database
+	remove_student(myDatabase, 123456);//removes the student from database
+	print_students_db(myDatabase); //student removal is still not working
+	print_all_students_db(myDatabase, 11);//prints all students in this course
+
+
+}
+
+

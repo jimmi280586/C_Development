@@ -1,0 +1,87 @@
+
+#include "database.h"
+
+database *create_database()
+{
+	database *myDatabase = malloc(sizeof(database));//sets pointer to database stucture
+	if (NULL == myDatabase)//if mydatabse pointer is equal to standard def of NULL
+	{
+	      printf("\n Unable locate memory \n"); //This shouldn't happen
+	      return NULL;
+	 }
+
+	myDatabase->student = create_student_list();
+	myDatabase->teacher = create_teacher_list();
+	myDatabase->assignment = create_assignment_list();
+	myDatabase->enrollment = create_enrollment_list();
+	myDatabase->course = create_course_list();
+	readFile(myDatabase->student, myDatabase->teacher, myDatabase->course, myDatabase->enrollment, myDatabase->assignment);//read all info from file
+	return myDatabase;
+}
+
+
+void add_student(database *myDatabase, int student_number, char* student_name)
+{
+	student *newStudent = create_student(student_number, student_name);
+	add_student(myDatabase->student, newStudent);
+}
+
+void add_teacher(database *myDatabase, int teacher_number, char* teacher_name)
+{
+	teacher *newTeacher = create_teacher(teacher_number, teacher_name);
+	add_teacher(myDatabase->teacher, newTeacher);
+}
+
+void print_students(database *myDatabase)
+{
+	print_students(myDatabase->student);
+}
+
+void print_teachers(database *myDatabase)
+{
+	print_teachers(myDatabase->teacher);
+}
+
+void print_courses(database *myDatabase)
+{
+	print_courses(myDatabase->course);
+}
+
+int enrol_student(database *myDatabase, int student_number, int course_number)
+{
+	return enrol_student(myDatabase->enrollment, myDatabase->student, myDatabase->course, student_number, course_number);
+}
+
+int assign_teacher(database *myDatabase, int teacher_number, int course_number)
+{
+	return assign_teacher(myDatabase->assignment, myDatabase->teacher, myDatabase->course, teacher_number, course_number);
+}
+
+void print_all_courses(database *myDatabase, int student_number)
+{
+	print_course_for_student(myDatabase->enrollment, myDatabase->student, student_number);
+}
+
+void print_all_courses(database *myDatabase, int teacher_number)
+{
+	print_course_for_teacher(myDatabase->assignment,myDatabase->teacher, teacher_number);
+}
+
+void print_all_students(database *myDatabase, int course_number)
+{
+	course *myCourse = get_course(course_number, myDatabase->course);
+	if (myCourse == NULL)
+	{
+		//courses isn't in the database
+		printf("course number: %d isn't in the database", course_number);
+		return;
+	}
+	printf("Printing all students for course number %d:\n", course_number);
+	student_node *myStudentList = get_courses_for_student(myDatabase->enrollment, myCourse);
+	print_students(myStudentList);
+}
+
+int remove_student(database *myDatabase, int studen_number)
+{
+	return remove_student_by_student_number(myDatabase->enrollment, myDatabase->student, studen_number);
+}

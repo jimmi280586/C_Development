@@ -1,6 +1,7 @@
-10:40:49 **** Incremental Build of configuration Debug for project HelloWorld ****
-make all 
-make: Nothing to be done for 'all'.
+17:32:38 **** Clean-only build of configuration Debug for project HelloWorld ****
+make clean 
+rm -rf  ./src/HelloWorld.o  ./src/HelloWorld.d  HelloWorld.exe
+ 
 
-10:40:49 Build Finished (took 77ms)
+17:32:38 Build Finished (took 143ms)
 
