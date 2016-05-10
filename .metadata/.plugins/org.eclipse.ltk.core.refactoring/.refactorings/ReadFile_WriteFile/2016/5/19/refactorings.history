@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ReadFile_WriteFile/WriteToFile.c&apos; to &apos;Write.c&apos;" description="Rename resource &apos;WriteToFile.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WriteToFile.c" name="Write.c" stamp="1462870235215" updateReferences="true"/>
+</session>

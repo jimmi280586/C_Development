@@ -1,7 +1,7 @@
-17:32:38 **** Clean-only build of configuration Debug for project HelloWorld ****
+11:09:03 **** Clean-only build of configuration Debug for project HelloWorld ****
 make clean 
 rm -rf  ./src/HelloWorld.o  ./src/HelloWorld.d  HelloWorld.exe
  
 
-17:32:38 Build Finished (took 143ms)
+11:09:03 Build Finished (took 138ms)
 

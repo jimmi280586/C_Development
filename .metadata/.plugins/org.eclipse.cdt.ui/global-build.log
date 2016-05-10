@@ -3031,3 +3031,963 @@ rm -rf  ./src/main.o ./src/model.o ./src/view.o  ./src/main.d ./src/model.d ./sr
 make clean 
 rm -rf  ./src/Exercise1.o  ./src/Exercise1.d  PointerExercise.exe
  
+10:34:03 **** Clean-only build of configuration Debug for project Assignment2 ****
+make clean 
+rm -rf  ./src/.OldMain.o ./src/assignment.o ./src/course.o ./src/database.o ./src/enrollment.o ./src/fileIO.o ./src/main.o ./src/student.o ./src/teacher.o  ./src/.OldMain.d ./src/assignment.d ./src/course.d ./src/database.d ./src/enrollment.d ./src/fileIO.d ./src/main.d ./src/student.d ./src/teacher.d  Assignment2.exe
+ 
+10:34:04 **** Clean-only build of configuration Debug for project Assignment_2 ****
+make clean 
+rm -rf  ./src/Assignments.o ./src/Course.o ./src/Database.o ./src/File.o ./src/Main.o ./src/School.o ./src/Student.o ./src/Teacher.o  ./src/Assignments.d ./src/Course.d ./src/Database.d ./src/File.d ./src/Main.d ./src/School.d ./src/Student.d ./src/Teacher.d  Assignment_2.exe
+ 
+10:34:04 **** Clean-only build of configuration Debug for project Caculator ****
+make clean 
+rm -rf  ./src/Main.o  ./src/Main.d  Caculator.exe
+ 
+10:34:04 **** Clean-only build of configuration Debug for project Exercise1 ****
+make clean 
+rm -rf  ./src/Exercise1.o  ./src/Exercise1.d  Exercise1.exe
+ 
+10:34:04 **** Clean-only build of configuration Debug for project HelloWorld ****
+make clean 
+rm -rf  ./src/HelloWorld.o  ./src/HelloWorld.d  HelloWorld.exe
+ 
+10:34:04 **** Clean-only build of configuration Debug for project Hp15c_calculator ****
+make clean 
+rm -rf  ./src/main.o ./src/model.o ./src/view.o  ./src/main.d ./src/model.d ./src/view.d  Hp15c_calculator.exe
+ 
+10:34:05 **** Clean-only build of configuration Debug for project PointerExercise ****
+make clean 
+rm -rf  ./src/Exercise1.o  ./src/Exercise1.d  PointerExercise.exe
+ 
+10:35:05 **** Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/DB.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DB.d" -MT"src/DB.o" -o "src/DB.o" "../src/DB.c"
+../src/DB.c: In function 'print_all_courses_for_teacher':
+../src/DB.c:66:2: warning: implicit declaration of function 'print_course_for_teacher' [-Wimplicit-function-declaration]
+  print_course_for_teacher(myDatabase->assignmentList,myDatabase->teacherList, teacher_number);
+  ^
+Finished building: ../src/DB.c
+ 
+Building file: ../src/assignment.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/assignment.d" -MT"src/assignment.o" -o "src/assignment.o" "../src/assignment.c"
+../src/assignment.c: In function 'get_teacher_courses_recursive':
+../src/assignment.c:83:3: warning: implicit declaration of function 'get_students_courses_recursive' [-Wimplicit-function-declaration]
+   get_students_courses_recursive(assignmentList->next, myTeacher, myCoursList);
+   ^
+../src/assignment.c: In function 'assign_teacher':
+../src/assignment.c:111:2: warning: implicit declaration of function 'add_enrollment' [-Wimplicit-function-declaration]
+  add_enrollment(assignmentList, myAssignment);
+  ^
+Finished building: ../src/assignment.c
+ 
+Building file: ../src/course.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/course.d" -MT"src/course.o" -o "src/course.o" "../src/course.c"
+Finished building: ../src/course.c
+ 
+Building file: ../src/enroll.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/enroll.d" -MT"src/enroll.o" -o "src/enroll.o" "../src/enroll.c"
+Finished building: ../src/enroll.c
+ 
+Building file: ../src/file.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/file.d" -MT"src/file.o" -o "src/file.o" "../src/file.c"
+Finished building: ../src/file.c
+ 
+Building file: ../src/main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:6:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^
+Finished building: ../src/main.c
+ 
+Building file: ../src/student.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/student.d" -MT"src/student.o" -o "src/student.o" "../src/student.c"
+Finished building: ../src/student.c
+ 
+Building file: ../src/teacher.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/teacher.d" -MT"src/teacher.o" -o "src/teacher.o" "../src/teacher.c"
+Finished building: ../src/teacher.c
+ 
+Building target: Assignment2.exe
+Invoking: Cygwin C Linker
+gcc  -o "Assignment2.exe"  ./src/DB.o ./src/assignment.o ./src/course.o ./src/enroll.o ./src/file.o ./src/main.o ./src/student.o ./src/teacher.o   
+Finished building target: Assignment2.exe
+ 
+10:35:08 **** Build of configuration Debug for project Assignment_2 ****
+make all 
+Building file: ../src/Assignments.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignments.d" -MT"src/Assignments.o" -o "src/Assignments.o" "../src/Assignments.c"
+Finished building: ../src/Assignments.c
+ 
+Building file: ../src/Course.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Course.d" -MT"src/Course.o" -o "src/Course.o" "../src/Course.c"
+Finished building: ../src/Course.c
+ 
+Building file: ../src/Database.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Database.d" -MT"src/Database.o" -o "src/Database.o" "../src/Database.c"
+Finished building: ../src/Database.c
+ 
+Building file: ../src/File.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/File.d" -MT"src/File.o" -o "src/File.o" "../src/File.c"
+Finished building: ../src/File.c
+ 
+Building file: ../src/Main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+Finished building: ../src/Main.c
+ 
+Building file: ../src/School.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/School.d" -MT"src/School.o" -o "src/School.o" "../src/School.c"
+Finished building: ../src/School.c
+ 
+Building file: ../src/Student.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.c"
+Finished building: ../src/Student.c
+ 
+Building file: ../src/Teacher.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Teacher.d" -MT"src/Teacher.o" -o "src/Teacher.o" "../src/Teacher.c"
+Finished building: ../src/Teacher.c
+ 
+Building target: Assignment_2.exe
+Invoking: Cygwin C Linker
+gcc  -o "Assignment_2.exe"  ./src/Assignments.o ./src/Course.o ./src/Database.o ./src/File.o ./src/Main.o ./src/School.o ./src/Student.o ./src/Teacher.o   
+Finished building target: Assignment_2.exe
+ 
+10:35:10 **** Build of configuration Debug for project Caculator ****
+make all 
+Building file: ../src/Main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+Finished building: ../src/Main.c
+ 
+Building target: Caculator.exe
+Invoking: Cygwin C Linker
+gcc  -o "Caculator.exe"  ./src/Main.o   
+Finished building target: Caculator.exe
+ 
+10:35:11 **** Build of configuration Debug for project Exercise1 ****
+make all 
+Building file: ../src/Exercise1.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Exercise1.d" -MT"src/Exercise1.o" -o "src/Exercise1.o" "../src/Exercise1.c"
+Finished building: ../src/Exercise1.c
+ 
+Building target: Exercise1.exe
+Invoking: Cygwin C Linker
+gcc  -o "Exercise1.exe"  ./src/Exercise1.o   
+Finished building target: Exercise1.exe
+ 
+10:35:11 **** Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.o" -o "src/HelloWorld.o" "../src/HelloWorld.c"
+Finished building: ../src/HelloWorld.c
+ 
+Building target: HelloWorld.exe
+Invoking: Cygwin C Linker
+gcc  -o "HelloWorld.exe"  ./src/HelloWorld.o   
+Finished building target: HelloWorld.exe
+ 
+
+**** Build of configuration Debug for project Hp15c ****
+
+Nothing to build for project Hp15c
+10:35:12 **** Build of configuration Debug for project Hp15c_calculator ****
+make all 
+Building file: ../src/main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:11:10: warning: unused variable 'i' [-Wunused-variable]
+   int n, i=0;
+          ^
+Finished building: ../src/main.c
+ 
+Building file: ../src/model.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/model.d" -MT"src/model.o" -o "src/model.o" "../src/model.c"
+Finished building: ../src/model.c
+ 
+Building file: ../src/view.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/view.d" -MT"src/view.o" -o "src/view.o" "../src/view.c"
+Finished building: ../src/view.c
+ 
+Building target: Hp15c_calculator.exe
+Invoking: Cygwin C Linker
+gcc  -o "Hp15c_calculator.exe"  ./src/main.o ./src/model.o ./src/view.o   
+Finished building target: Hp15c_calculator.exe
+ 
+10:35:13 **** Build of configuration Debug for project PointerExercise ****
+make all 
+Building file: ../src/Exercise1.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Exercise1.d" -MT"src/Exercise1.o" -o "src/Exercise1.o" "../src/Exercise1.c"
+../src/Exercise1.c: In function 'main':
+../src/Exercise1.c:18:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   printf("ip: %d\n", ip);   //prints address of x
+          ^
+../src/Exercise1.c:18:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+../src/Exercise1.c:19:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int **' [-Wformat=]
+   printf("&ip: %d\n", &ip);  //prints address of pointer ip to console
+          ^
+../src/Exercise1.c:19:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int **' [-Wformat=]
+../src/Exercise1.c:20:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   printf("&x: %d\n", &x);   //prints address of x to console
+          ^
+../src/Exercise1.c:20:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+../src/Exercise1.c:33:3: warning: implicit declaration of function 'function_X' [-Wimplicit-function-declaration]
+   function_X(ip, iq);    //calls function_x with ip and iq
+   ^
+../src/Exercise1.c: At top level:
+../src/Exercise1.c:45:6: warning: conflicting types for 'function_X'
+ void function_X(int *a, int *b)
+      ^
+../src/Exercise1.c:33:3: note: previous implicit declaration of 'function_X' was here
+   function_X(ip, iq);    //calls function_x with ip and iq
+   ^
+Finished building: ../src/Exercise1.c
+ 
+Building target: PointerExercise.exe
+Invoking: Cygwin C Linker
+gcc  -o "PointerExercise.exe"  ./src/Exercise1.o   
+Finished building target: PointerExercise.exe
+ 
+10:35:13 **** Build of configuration Debug for project ReadFile_WriteFile ****
+make all 
+Building file: ../Read.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Read.d" -MT"Read.o" -o "Read.o" "../Read.c"
+Finished building: ../Read.c
+ 
+Building target: ReadFile_WriteFile.exe
+Invoking: Cygwin C Linker
+gcc  -o "ReadFile_WriteFile.exe"  ./Read.o   
+/usr/lib/libcygwin.a(libcmain.o): In function `main':
+/usr/src/debug/cygwin-2.4.1-1/winsup/cygwin/lib/libcmain.c:39: undefined reference to `WinMain@16'
+makefile:29: recipe for target 'ReadFile_WriteFile.exe' failed
+collect2: error: ld returned 1 exit status
+make: *** [ReadFile_WriteFile.exe] Error 1
+10:35:21 **** Clean-only build of configuration Debug for project Assignment2 ****
+make clean 
+rm -rf  ./src/DB.o ./src/assignment.o ./src/course.o ./src/enroll.o ./src/file.o ./src/main.o ./src/student.o ./src/teacher.o  ./src/DB.d ./src/assignment.d ./src/course.d ./src/enroll.d ./src/file.d ./src/main.d ./src/student.d ./src/teacher.d  Assignment2.exe
+ 
+10:35:21 **** Clean-only build of configuration Debug for project Assignment_2 ****
+make clean 
+rm -rf  ./src/Assignments.o ./src/Course.o ./src/Database.o ./src/File.o ./src/Main.o ./src/School.o ./src/Student.o ./src/Teacher.o  ./src/Assignments.d ./src/Course.d ./src/Database.d ./src/File.d ./src/Main.d ./src/School.d ./src/Student.d ./src/Teacher.d  Assignment_2.exe
+ 
+10:35:21 **** Clean-only build of configuration Debug for project Caculator ****
+make clean 
+rm -rf  ./src/Main.o  ./src/Main.d  Caculator.exe
+ 
+10:35:22 **** Clean-only build of configuration Debug for project Exercise1 ****
+make clean 
+rm -rf  ./src/Exercise1.o  ./src/Exercise1.d  Exercise1.exe
+ 
+10:35:22 **** Clean-only build of configuration Debug for project HelloWorld ****
+make clean 
+rm -rf  ./src/HelloWorld.o  ./src/HelloWorld.d  HelloWorld.exe
+ 
+10:35:22 **** Clean-only build of configuration Debug for project Hp15c_calculator ****
+make clean 
+rm -rf  ./src/main.o ./src/model.o ./src/view.o  ./src/main.d ./src/model.d ./src/view.d  Hp15c_calculator.exe
+ 
+10:35:22 **** Clean-only build of configuration Debug for project PointerExercise ****
+make clean 
+rm -rf  ./src/Exercise1.o  ./src/Exercise1.d  PointerExercise.exe
+ 
+10:35:22 **** Clean-only build of configuration Debug for project ReadFile_WriteFile ****
+make clean 
+rm -rf  ./Read.o  ./Read.d  ReadFile_WriteFile.exe
+ 
+10:36:50 **** Clean-only build of configuration Debug for project Assignment2 ****
+make clean 
+rm -rf  ./src/DB.o ./src/assignment.o ./src/course.o ./src/enroll.o ./src/file.o ./src/main.o ./src/student.o ./src/teacher.o  ./src/DB.d ./src/assignment.d ./src/course.d ./src/enroll.d ./src/file.d ./src/main.d ./src/student.d ./src/teacher.d  Assignment2.exe
+ 
+10:36:50 **** Clean-only build of configuration Debug for project Assignment_2 ****
+make clean 
+rm -rf  ./src/Assignments.o ./src/Course.o ./src/Database.o ./src/File.o ./src/Main.o ./src/School.o ./src/Student.o ./src/Teacher.o  ./src/Assignments.d ./src/Course.d ./src/Database.d ./src/File.d ./src/Main.d ./src/School.d ./src/Student.d ./src/Teacher.d  Assignment_2.exe
+ 
+10:36:50 **** Clean-only build of configuration Debug for project Caculator ****
+make clean 
+rm -rf  ./src/Main.o  ./src/Main.d  Caculator.exe
+ 
+10:36:51 **** Clean-only build of configuration Debug for project Exercise1 ****
+make clean 
+rm -rf  ./src/Exercise1.o  ./src/Exercise1.d  Exercise1.exe
+ 
+10:36:51 **** Clean-only build of configuration Debug for project HelloWorld ****
+make clean 
+rm -rf  ./src/HelloWorld.o  ./src/HelloWorld.d  HelloWorld.exe
+ 
+10:36:51 **** Clean-only build of configuration Debug for project Hp15c_calculator ****
+make clean 
+rm -rf  ./src/main.o ./src/model.o ./src/view.o  ./src/main.d ./src/model.d ./src/view.d  Hp15c_calculator.exe
+ 
+10:36:51 **** Clean-only build of configuration Debug for project PointerExercise ****
+make clean 
+rm -rf  ./src/Exercise1.o  ./src/Exercise1.d  PointerExercise.exe
+ 
+10:36:51 **** Clean-only build of configuration Debug for project ReadFile_WriteFile ****
+make clean 
+rm -rf  ./Read.o  ./Read.d  ReadFile_WriteFile.exe
+ 
+10:36:54 **** Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/DB.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DB.d" -MT"src/DB.o" -o "src/DB.o" "../src/DB.c"
+../src/DB.c: In function 'print_all_courses_for_teacher':
+../src/DB.c:66:2: warning: implicit declaration of function 'print_course_for_teacher' [-Wimplicit-function-declaration]
+  print_course_for_teacher(myDatabase->assignmentList,myDatabase->teacherList, teacher_number);
+  ^
+Finished building: ../src/DB.c
+ 
+Building file: ../src/assignment.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/assignment.d" -MT"src/assignment.o" -o "src/assignment.o" "../src/assignment.c"
+../src/assignment.c: In function 'get_teacher_courses_recursive':
+../src/assignment.c:83:3: warning: implicit declaration of function 'get_students_courses_recursive' [-Wimplicit-function-declaration]
+   get_students_courses_recursive(assignmentList->next, myTeacher, myCoursList);
+   ^
+../src/assignment.c: In function 'assign_teacher':
+../src/assignment.c:111:2: warning: implicit declaration of function 'add_enrollment' [-Wimplicit-function-declaration]
+  add_enrollment(assignmentList, myAssignment);
+  ^
+Finished building: ../src/assignment.c
+ 
+Building file: ../src/course.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/course.d" -MT"src/course.o" -o "src/course.o" "../src/course.c"
+Finished building: ../src/course.c
+ 
+Building file: ../src/enroll.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/enroll.d" -MT"src/enroll.o" -o "src/enroll.o" "../src/enroll.c"
+Finished building: ../src/enroll.c
+ 
+Building file: ../src/file.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/file.d" -MT"src/file.o" -o "src/file.o" "../src/file.c"
+Finished building: ../src/file.c
+ 
+Building file: ../src/main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:6:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^
+Finished building: ../src/main.c
+ 
+Building file: ../src/student.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/student.d" -MT"src/student.o" -o "src/student.o" "../src/student.c"
+Finished building: ../src/student.c
+ 
+Building file: ../src/teacher.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/teacher.d" -MT"src/teacher.o" -o "src/teacher.o" "../src/teacher.c"
+Finished building: ../src/teacher.c
+ 
+Building target: Assignment2.exe
+Invoking: Cygwin C Linker
+gcc  -o "Assignment2.exe"  ./src/DB.o ./src/assignment.o ./src/course.o ./src/enroll.o ./src/file.o ./src/main.o ./src/student.o ./src/teacher.o   
+Finished building target: Assignment2.exe
+ 
+10:36:56 **** Build of configuration Debug for project Assignment_2 ****
+make all 
+Building file: ../src/Assignments.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignments.d" -MT"src/Assignments.o" -o "src/Assignments.o" "../src/Assignments.c"
+Finished building: ../src/Assignments.c
+ 
+Building file: ../src/Course.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Course.d" -MT"src/Course.o" -o "src/Course.o" "../src/Course.c"
+Finished building: ../src/Course.c
+ 
+Building file: ../src/Database.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Database.d" -MT"src/Database.o" -o "src/Database.o" "../src/Database.c"
+Finished building: ../src/Database.c
+ 
+Building file: ../src/File.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/File.d" -MT"src/File.o" -o "src/File.o" "../src/File.c"
+Finished building: ../src/File.c
+ 
+Building file: ../src/Main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+Finished building: ../src/Main.c
+ 
+Building file: ../src/School.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/School.d" -MT"src/School.o" -o "src/School.o" "../src/School.c"
+Finished building: ../src/School.c
+ 
+Building file: ../src/Student.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.c"
+Finished building: ../src/Student.c
+ 
+Building file: ../src/Teacher.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Teacher.d" -MT"src/Teacher.o" -o "src/Teacher.o" "../src/Teacher.c"
+Finished building: ../src/Teacher.c
+ 
+Building target: Assignment_2.exe
+Invoking: Cygwin C Linker
+gcc  -o "Assignment_2.exe"  ./src/Assignments.o ./src/Course.o ./src/Database.o ./src/File.o ./src/Main.o ./src/School.o ./src/Student.o ./src/Teacher.o   
+Finished building target: Assignment_2.exe
+ 
+10:36:57 **** Build of configuration Debug for project Caculator ****
+make all 
+Building file: ../src/Main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+Finished building: ../src/Main.c
+ 
+Building target: Caculator.exe
+Invoking: Cygwin C Linker
+gcc  -o "Caculator.exe"  ./src/Main.o   
+Finished building target: Caculator.exe
+ 
+10:36:58 **** Build of configuration Debug for project Exercise1 ****
+make all 
+Building file: ../src/Exercise1.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Exercise1.d" -MT"src/Exercise1.o" -o "src/Exercise1.o" "../src/Exercise1.c"
+Finished building: ../src/Exercise1.c
+ 
+Building target: Exercise1.exe
+Invoking: Cygwin C Linker
+gcc  -o "Exercise1.exe"  ./src/Exercise1.o   
+Finished building target: Exercise1.exe
+ 
+10:36:59 **** Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.o" -o "src/HelloWorld.o" "../src/HelloWorld.c"
+Finished building: ../src/HelloWorld.c
+ 
+Building target: HelloWorld.exe
+Invoking: Cygwin C Linker
+gcc  -o "HelloWorld.exe"  ./src/HelloWorld.o   
+Finished building target: HelloWorld.exe
+ 
+
+**** Build of configuration Debug for project Hp15c ****
+
+Nothing to build for project Hp15c
+10:36:59 **** Build of configuration Debug for project Hp15c_calculator ****
+make all 
+Building file: ../src/main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:11:10: warning: unused variable 'i' [-Wunused-variable]
+   int n, i=0;
+          ^
+Finished building: ../src/main.c
+ 
+Building file: ../src/model.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/model.d" -MT"src/model.o" -o "src/model.o" "../src/model.c"
+Finished building: ../src/model.c
+ 
+Building file: ../src/view.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/view.d" -MT"src/view.o" -o "src/view.o" "../src/view.c"
+Finished building: ../src/view.c
+ 
+Building target: Hp15c_calculator.exe
+Invoking: Cygwin C Linker
+gcc  -o "Hp15c_calculator.exe"  ./src/main.o ./src/model.o ./src/view.o   
+Finished building target: Hp15c_calculator.exe
+ 
+10:37:00 **** Build of configuration Debug for project PointerExercise ****
+make all 
+Building file: ../src/Exercise1.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Exercise1.d" -MT"src/Exercise1.o" -o "src/Exercise1.o" "../src/Exercise1.c"
+../src/Exercise1.c: In function 'main':
+../src/Exercise1.c:18:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   printf("ip: %d\n", ip);   //prints address of x
+          ^
+../src/Exercise1.c:18:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+../src/Exercise1.c:19:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int **' [-Wformat=]
+   printf("&ip: %d\n", &ip);  //prints address of pointer ip to console
+          ^
+../src/Exercise1.c:19:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int **' [-Wformat=]
+../src/Exercise1.c:20:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   printf("&x: %d\n", &x);   //prints address of x to console
+          ^
+../src/Exercise1.c:20:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+../src/Exercise1.c:33:3: warning: implicit declaration of function 'function_X' [-Wimplicit-function-declaration]
+   function_X(ip, iq);    //calls function_x with ip and iq
+   ^
+../src/Exercise1.c: At top level:
+../src/Exercise1.c:45:6: warning: conflicting types for 'function_X'
+ void function_X(int *a, int *b)
+      ^
+../src/Exercise1.c:33:3: note: previous implicit declaration of 'function_X' was here
+   function_X(ip, iq);    //calls function_x with ip and iq
+   ^
+Finished building: ../src/Exercise1.c
+ 
+Building target: PointerExercise.exe
+Invoking: Cygwin C Linker
+gcc  -o "PointerExercise.exe"  ./src/Exercise1.o   
+Finished building target: PointerExercise.exe
+ 
+10:37:01 **** Build of configuration Debug for project ReadFile_WriteFile ****
+make all 
+Building file: ../Read.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Read.d" -MT"Read.o" -o "Read.o" "../Read.c"
+Finished building: ../Read.c
+ 
+Building target: ReadFile_WriteFile.exe
+Invoking: Cygwin C Linker
+gcc  -o "ReadFile_WriteFile.exe"  ./Read.o   
+Finished building target: ReadFile_WriteFile.exe
+ 
+10:37:16 **** Incremental Build of configuration Debug for project ReadFile_WriteFile ****
+make all 
+Building file: ../Read.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Read.d" -MT"Read.o" -o "Read.o" "../Read.c"
+Finished building: ../Read.c
+ 
+Building target: ReadFile_WriteFile.exe
+Invoking: Cygwin C Linker
+gcc  -o "ReadFile_WriteFile.exe"  ./Read.o   
+Finished building target: ReadFile_WriteFile.exe
+ 
+10:55:02 **** Clean-only build of configuration Debug for project Assignment2 ****
+make clean 
+rm -rf  ./src/DB.o ./src/assignment.o ./src/course.o ./src/enroll.o ./src/file.o ./src/main.o ./src/student.o ./src/teacher.o  ./src/DB.d ./src/assignment.d ./src/course.d ./src/enroll.d ./src/file.d ./src/main.d ./src/student.d ./src/teacher.d  Assignment2.exe
+ 
+10:55:02 **** Clean-only build of configuration Debug for project Assignment_2 ****
+make clean 
+rm -rf  ./src/Assignments.o ./src/Course.o ./src/Database.o ./src/File.o ./src/Main.o ./src/School.o ./src/Student.o ./src/Teacher.o  ./src/Assignments.d ./src/Course.d ./src/Database.d ./src/File.d ./src/Main.d ./src/School.d ./src/Student.d ./src/Teacher.d  Assignment_2.exe
+ 
+10:55:02 **** Clean-only build of configuration Debug for project Caculator ****
+make clean 
+rm -rf  ./src/Main.o  ./src/Main.d  Caculator.exe
+ 
+10:55:02 **** Clean-only build of configuration Debug for project Exercise1 ****
+make clean 
+rm -rf  ./src/Exercise1.o  ./src/Exercise1.d  Exercise1.exe
+ 
+10:55:02 **** Clean-only build of configuration Debug for project HelloWorld ****
+make clean 
+rm -rf  ./src/HelloWorld.o  ./src/HelloWorld.d  HelloWorld.exe
+ 
+10:55:03 **** Clean-only build of configuration Debug for project Hp15c_calculator ****
+make clean 
+rm -rf  ./src/main.o ./src/model.o ./src/view.o  ./src/main.d ./src/model.d ./src/view.d  Hp15c_calculator.exe
+ 
+10:55:03 **** Clean-only build of configuration Debug for project PointerExercise ****
+make clean 
+rm -rf  ./src/Exercise1.o  ./src/Exercise1.d  PointerExercise.exe
+ 
+10:55:03 **** Clean-only build of configuration Debug for project ReadFile_WriteFile ****
+make clean 
+rm -rf  ./Read.o  ./Read.d  ReadFile_WriteFile.exe
+ 
+10:55:46 **** Clean-only build of configuration Debug for project Assignment2 ****
+make clean 
+rm -rf  ./src/DB.o ./src/assignment.o ./src/course.o ./src/enroll.o ./src/file.o ./src/main.o ./src/student.o ./src/teacher.o  ./src/DB.d ./src/assignment.d ./src/course.d ./src/enroll.d ./src/file.d ./src/main.d ./src/student.d ./src/teacher.d  Assignment2.exe
+ 
+10:55:46 **** Clean-only build of configuration Debug for project Assignment_2 ****
+make clean 
+rm -rf  ./src/Assignments.o ./src/Course.o ./src/Database.o ./src/File.o ./src/Main.o ./src/School.o ./src/Student.o ./src/Teacher.o  ./src/Assignments.d ./src/Course.d ./src/Database.d ./src/File.d ./src/Main.d ./src/School.d ./src/Student.d ./src/Teacher.d  Assignment_2.exe
+ 
+10:55:46 **** Clean-only build of configuration Debug for project Caculator ****
+make clean 
+rm -rf  ./src/Main.o  ./src/Main.d  Caculator.exe
+ 
+10:55:46 **** Clean-only build of configuration Debug for project Exercise1 ****
+make clean 
+rm -rf  ./src/Exercise1.o  ./src/Exercise1.d  Exercise1.exe
+ 
+10:55:46 **** Clean-only build of configuration Debug for project HelloWorld ****
+make clean 
+rm -rf  ./src/HelloWorld.o  ./src/HelloWorld.d  HelloWorld.exe
+ 
+10:55:47 **** Clean-only build of configuration Debug for project Hp15c_calculator ****
+make clean 
+rm -rf  ./src/main.o ./src/model.o ./src/view.o  ./src/main.d ./src/model.d ./src/view.d  Hp15c_calculator.exe
+ 
+10:55:47 **** Clean-only build of configuration Debug for project PointerExercise ****
+make clean 
+rm -rf  ./src/Exercise1.o  ./src/Exercise1.d  PointerExercise.exe
+ 
+10:55:47 **** Clean-only build of configuration Debug for project ReadFile_WriteFile ****
+make clean 
+rm -rf  ./Read.o  ./Read.d  ReadFile_WriteFile.exe
+ 
+11:00:15 **** Clean-only build of configuration Debug for project Assignment2 ****
+make clean 
+rm -rf  ./src/DB.o ./src/assignment.o ./src/course.o ./src/enroll.o ./src/file.o ./src/main.o ./src/student.o ./src/teacher.o  ./src/DB.d ./src/assignment.d ./src/course.d ./src/enroll.d ./src/file.d ./src/main.d ./src/student.d ./src/teacher.d  Assignment2.exe
+ 
+11:00:15 **** Clean-only build of configuration Debug for project Assignment_2 ****
+make clean 
+rm -rf  ./src/Assignments.o ./src/Course.o ./src/Database.o ./src/File.o ./src/Main.o ./src/School.o ./src/Student.o ./src/Teacher.o  ./src/Assignments.d ./src/Course.d ./src/Database.d ./src/File.d ./src/Main.d ./src/School.d ./src/Student.d ./src/Teacher.d  Assignment_2.exe
+ 
+11:00:15 **** Clean-only build of configuration Debug for project Caculator ****
+make clean 
+rm -rf  ./src/Main.o  ./src/Main.d  Caculator.exe
+ 
+11:00:15 **** Clean-only build of configuration Debug for project Exercise1 ****
+make clean 
+rm -rf  ./src/Exercise1.o  ./src/Exercise1.d  Exercise1.exe
+ 
+11:00:15 **** Clean-only build of configuration Debug for project HelloWorld ****
+make clean 
+rm -rf  ./src/HelloWorld.o  ./src/HelloWorld.d  HelloWorld.exe
+ 
+11:00:16 **** Clean-only build of configuration Debug for project Hp15c_calculator ****
+make clean 
+rm -rf  ./src/main.o ./src/model.o ./src/view.o  ./src/main.d ./src/model.d ./src/view.d  Hp15c_calculator.exe
+ 
+11:00:16 **** Clean-only build of configuration Debug for project PointerExercise ****
+make clean 
+rm -rf  ./src/Exercise1.o  ./src/Exercise1.d  PointerExercise.exe
+ 
+11:00:16 **** Clean-only build of configuration Debug for project ReadFile_WriteFile ****
+make clean 
+rm -rf  ./Read.o  ./Read.d  ReadFile_WriteFile.exe
+ 
+11:03:24 **** Clean-only build of configuration Debug for project Assignment2 ****
+make clean 
+rm -rf  ./src/DB.o ./src/assignment.o ./src/course.o ./src/enroll.o ./src/file.o ./src/main.o ./src/student.o ./src/teacher.o  ./src/DB.d ./src/assignment.d ./src/course.d ./src/enroll.d ./src/file.d ./src/main.d ./src/student.d ./src/teacher.d  Assignment2.exe
+ 
+11:03:25 **** Clean-only build of configuration Debug for project Assignment_2 ****
+make clean 
+rm -rf  ./src/Assignments.o ./src/Course.o ./src/Database.o ./src/File.o ./src/Main.o ./src/School.o ./src/Student.o ./src/Teacher.o  ./src/Assignments.d ./src/Course.d ./src/Database.d ./src/File.d ./src/Main.d ./src/School.d ./src/Student.d ./src/Teacher.d  Assignment_2.exe
+ 
+11:03:25 **** Clean-only build of configuration Debug for project Caculator ****
+make clean 
+rm -rf  ./src/Main.o  ./src/Main.d  Caculator.exe
+ 
+11:03:25 **** Clean-only build of configuration Debug for project Exercise1 ****
+make clean 
+rm -rf  ./src/Exercise1.o  ./src/Exercise1.d  Exercise1.exe
+ 
+11:03:25 **** Clean-only build of configuration Debug for project HelloWorld ****
+make clean 
+rm -rf  ./src/HelloWorld.o  ./src/HelloWorld.d  HelloWorld.exe
+ 
+11:03:25 **** Clean-only build of configuration Debug for project Hp15c_calculator ****
+make clean 
+rm -rf  ./src/main.o ./src/model.o ./src/view.o  ./src/main.d ./src/model.d ./src/view.d  Hp15c_calculator.exe
+ 
+11:03:25 **** Clean-only build of configuration Debug for project PointerExercise ****
+make clean 
+rm -rf  ./src/Exercise1.o  ./src/Exercise1.d  PointerExercise.exe
+ 
+11:03:25 **** Clean-only build of configuration Debug for project ReadFile_WriteFile ****
+make clean 
+rm -rf  ./Read.o  ./Read.d  ReadFile_WriteFile.exe
+ 
+11:03:29 **** Build of configuration Debug for project Assignment2 ****
+make all 
+Building file: ../src/DB.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DB.d" -MT"src/DB.o" -o "src/DB.o" "../src/DB.c"
+../src/DB.c: In function 'print_all_courses_for_teacher':
+../src/DB.c:66:2: warning: implicit declaration of function 'print_course_for_teacher' [-Wimplicit-function-declaration]
+  print_course_for_teacher(myDatabase->assignmentList,myDatabase->teacherList, teacher_number);
+  ^
+Finished building: ../src/DB.c
+ 
+Building file: ../src/assignment.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/assignment.d" -MT"src/assignment.o" -o "src/assignment.o" "../src/assignment.c"
+../src/assignment.c: In function 'get_teacher_courses_recursive':
+../src/assignment.c:83:3: warning: implicit declaration of function 'get_students_courses_recursive' [-Wimplicit-function-declaration]
+   get_students_courses_recursive(assignmentList->next, myTeacher, myCoursList);
+   ^
+../src/assignment.c: In function 'assign_teacher':
+../src/assignment.c:111:2: warning: implicit declaration of function 'add_enrollment' [-Wimplicit-function-declaration]
+  add_enrollment(assignmentList, myAssignment);
+  ^
+Finished building: ../src/assignment.c
+ 
+Building file: ../src/course.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/course.d" -MT"src/course.o" -o "src/course.o" "../src/course.c"
+Finished building: ../src/course.c
+ 
+Building file: ../src/enroll.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/enroll.d" -MT"src/enroll.o" -o "src/enroll.o" "../src/enroll.c"
+Finished building: ../src/enroll.c
+ 
+Building file: ../src/file.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/file.d" -MT"src/file.o" -o "src/file.o" "../src/file.c"
+Finished building: ../src/file.c
+ 
+Building file: ../src/main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:6:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^
+Finished building: ../src/main.c
+ 
+Building file: ../src/student.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/student.d" -MT"src/student.o" -o "src/student.o" "../src/student.c"
+Finished building: ../src/student.c
+ 
+Building file: ../src/teacher.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/teacher.d" -MT"src/teacher.o" -o "src/teacher.o" "../src/teacher.c"
+Finished building: ../src/teacher.c
+ 
+Building target: Assignment2.exe
+Invoking: Cygwin C Linker
+gcc  -o "Assignment2.exe"  ./src/DB.o ./src/assignment.o ./src/course.o ./src/enroll.o ./src/file.o ./src/main.o ./src/student.o ./src/teacher.o   
+Finished building target: Assignment2.exe
+ 
+11:03:31 **** Build of configuration Debug for project Assignment_2 ****
+make all 
+Building file: ../src/Assignments.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignments.d" -MT"src/Assignments.o" -o "src/Assignments.o" "../src/Assignments.c"
+Finished building: ../src/Assignments.c
+ 
+Building file: ../src/Course.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Course.d" -MT"src/Course.o" -o "src/Course.o" "../src/Course.c"
+Finished building: ../src/Course.c
+ 
+Building file: ../src/Database.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Database.d" -MT"src/Database.o" -o "src/Database.o" "../src/Database.c"
+Finished building: ../src/Database.c
+ 
+Building file: ../src/File.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/File.d" -MT"src/File.o" -o "src/File.o" "../src/File.c"
+Finished building: ../src/File.c
+ 
+Building file: ../src/Main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+Finished building: ../src/Main.c
+ 
+Building file: ../src/School.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/School.d" -MT"src/School.o" -o "src/School.o" "../src/School.c"
+Finished building: ../src/School.c
+ 
+Building file: ../src/Student.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.c"
+Finished building: ../src/Student.c
+ 
+Building file: ../src/Teacher.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Teacher.d" -MT"src/Teacher.o" -o "src/Teacher.o" "../src/Teacher.c"
+Finished building: ../src/Teacher.c
+ 
+Building target: Assignment_2.exe
+Invoking: Cygwin C Linker
+gcc  -o "Assignment_2.exe"  ./src/Assignments.o ./src/Course.o ./src/Database.o ./src/File.o ./src/Main.o ./src/School.o ./src/Student.o ./src/Teacher.o   
+Finished building target: Assignment_2.exe
+ 
+11:03:33 **** Build of configuration Debug for project Caculator ****
+make all 
+Building file: ../src/Main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+Finished building: ../src/Main.c
+ 
+Building target: Caculator.exe
+Invoking: Cygwin C Linker
+gcc  -o "Caculator.exe"  ./src/Main.o   
+Finished building target: Caculator.exe
+ 
+11:03:33 **** Build of configuration Debug for project DatabaseConection ****
+make all 
+Building file: ../CreateTable.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"CreateTable.d" -MT"CreateTable.o" -o "CreateTable.o" "../CreateTable.c"
+../CreateTable.c:3:23: fatal error: my_global.h: No such file or directory
+ #include "my_global.h"
+                       ^
+compilation terminated.
+subdir.mk:18: recipe for target 'CreateTable.o' failed
+make: *** [CreateTable.o] Error 1
+11:03:34 **** Build of configuration Debug for project Exercise1 ****
+make all 
+Building file: ../src/Exercise1.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Exercise1.d" -MT"src/Exercise1.o" -o "src/Exercise1.o" "../src/Exercise1.c"
+Finished building: ../src/Exercise1.c
+ 
+Building target: Exercise1.exe
+Invoking: Cygwin C Linker
+gcc  -o "Exercise1.exe"  ./src/Exercise1.o   
+Finished building target: Exercise1.exe
+ 
+11:03:34 **** Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.o" -o "src/HelloWorld.o" "../src/HelloWorld.c"
+Finished building: ../src/HelloWorld.c
+ 
+Building target: HelloWorld.exe
+Invoking: Cygwin C Linker
+gcc  -o "HelloWorld.exe"  ./src/HelloWorld.o   
+Finished building target: HelloWorld.exe
+ 
+
+**** Build of configuration Debug for project Hp15c ****
+
+Nothing to build for project Hp15c
+11:03:35 **** Build of configuration Debug for project Hp15c_calculator ****
+make all 
+Building file: ../src/main.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:11:10: warning: unused variable 'i' [-Wunused-variable]
+   int n, i=0;
+          ^
+Finished building: ../src/main.c
+ 
+Building file: ../src/model.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/model.d" -MT"src/model.o" -o "src/model.o" "../src/model.c"
+Finished building: ../src/model.c
+ 
+Building file: ../src/view.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/view.d" -MT"src/view.o" -o "src/view.o" "../src/view.c"
+Finished building: ../src/view.c
+ 
+Building target: Hp15c_calculator.exe
+Invoking: Cygwin C Linker
+gcc  -o "Hp15c_calculator.exe"  ./src/main.o ./src/model.o ./src/view.o   
+Finished building target: Hp15c_calculator.exe
+ 
+11:03:36 **** Build of configuration Debug for project PointerExercise ****
+make all 
+Building file: ../src/Exercise1.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Exercise1.d" -MT"src/Exercise1.o" -o "src/Exercise1.o" "../src/Exercise1.c"
+../src/Exercise1.c: In function 'main':
+../src/Exercise1.c:18:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   printf("ip: %d\n", ip);   //prints address of x
+          ^
+../src/Exercise1.c:18:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+../src/Exercise1.c:19:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int **' [-Wformat=]
+   printf("&ip: %d\n", &ip);  //prints address of pointer ip to console
+          ^
+../src/Exercise1.c:19:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int **' [-Wformat=]
+../src/Exercise1.c:20:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   printf("&x: %d\n", &x);   //prints address of x to console
+          ^
+../src/Exercise1.c:20:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+../src/Exercise1.c:33:3: warning: implicit declaration of function 'function_X' [-Wimplicit-function-declaration]
+   function_X(ip, iq);    //calls function_x with ip and iq
+   ^
+../src/Exercise1.c: At top level:
+../src/Exercise1.c:45:6: warning: conflicting types for 'function_X'
+ void function_X(int *a, int *b)
+      ^
+../src/Exercise1.c:33:3: note: previous implicit declaration of 'function_X' was here
+   function_X(ip, iq);    //calls function_x with ip and iq
+   ^
+Finished building: ../src/Exercise1.c
+ 
+Building target: PointerExercise.exe
+Invoking: Cygwin C Linker
+gcc  -o "PointerExercise.exe"  ./src/Exercise1.o   
+Finished building target: PointerExercise.exe
+ 
+11:03:36 **** Build of configuration Debug for project ReadFile_WriteFile ****
+make all 
+Building file: ../Read.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Read.d" -MT"Read.o" -o "Read.o" "../Read.c"
+Finished building: ../Read.c
+ 
+Building file: ../Write.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Write.d" -MT"Write.o" -o "Write.o" "../Write.c"
+../Write.c:3:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main() {
+      ^
+Finished building: ../Write.c
+ 
+Building target: ReadFile_WriteFile.exe
+Invoking: Cygwin C Linker
+gcc  -o "ReadFile_WriteFile.exe"  ./Read.o ./Write.o   
+./Write.o: In function `main':
+/home/jimmi/C_Development/ReadFile_WriteFile/Debug/../Write.c:3: multiple definition of `main'
+./Read.o:/home/jimmi/C_Development/ReadFile_WriteFile/Debug/../Read.c:5: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [ReadFile_WriteFile.exe] Error 1
+makefile:29: recipe for target 'ReadFile_WriteFile.exe' failed
+11:09:03 **** Clean-only build of configuration Debug for project Assignment2 ****
+make clean 
+rm -rf  ./src/DB.o ./src/assignment.o ./src/course.o ./src/enroll.o ./src/file.o ./src/main.o ./src/student.o ./src/teacher.o  ./src/DB.d ./src/assignment.d ./src/course.d ./src/enroll.d ./src/file.d ./src/main.d ./src/student.d ./src/teacher.d  Assignment2.exe
+ 
+11:09:03 **** Clean-only build of configuration Debug for project Assignment_2 ****
+make clean 
+rm -rf  ./src/Assignments.o ./src/Course.o ./src/Database.o ./src/File.o ./src/Main.o ./src/School.o ./src/Student.o ./src/Teacher.o  ./src/Assignments.d ./src/Course.d ./src/Database.d ./src/File.d ./src/Main.d ./src/School.d ./src/Student.d ./src/Teacher.d  Assignment_2.exe
+ 
+11:09:03 **** Clean-only build of configuration Debug for project Caculator ****
+make clean 
+rm -rf  ./src/Main.o  ./src/Main.d  Caculator.exe
+ 
+11:09:03 **** Clean-only build of configuration Debug for project DatabaseConection ****
+make clean 
+rm -rf  ./CreateTable.o  ./CreateTable.d  DatabaseConection.exe
+ 
+11:09:03 **** Clean-only build of configuration Debug for project Exercise1 ****
+make clean 
+rm -rf  ./src/Exercise1.o  ./src/Exercise1.d  Exercise1.exe
+ 
+11:09:03 **** Clean-only build of configuration Debug for project HelloWorld ****
+make clean 
+rm -rf  ./src/HelloWorld.o  ./src/HelloWorld.d  HelloWorld.exe
+ 
+11:09:03 **** Clean-only build of configuration Debug for project Hp15c_calculator ****
+make clean 
+rm -rf  ./src/main.o ./src/model.o ./src/view.o  ./src/main.d ./src/model.d ./src/view.d  Hp15c_calculator.exe
+ 
+11:09:04 **** Clean-only build of configuration Debug for project PointerExercise ****
+make clean 
+rm -rf  ./src/Exercise1.o  ./src/Exercise1.d  PointerExercise.exe
+ 
+11:09:04 **** Clean-only build of configuration Debug for project ReadFile_WriteFile ****
+make clean 
+rm -rf  ./Read.o ./Write.o  ./Read.d ./Write.d  ReadFile_WriteFile.exe
+ 

@@ -1,0 +1,7 @@
+11:09:03 **** Clean-only build of configuration Debug for project DatabaseConection ****
+make clean 
+rm -rf  ./CreateTable.o  ./CreateTable.d  DatabaseConection.exe
+ 
+
+11:09:03 Build Finished (took 138ms)
+

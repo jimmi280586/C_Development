@@ -1,7 +1,7 @@
-17:32:38 **** Clean-only build of configuration Debug for project Hp15c_calculator ****
+11:09:03 **** Clean-only build of configuration Debug for project Hp15c_calculator ****
 make clean 
 rm -rf  ./src/main.o ./src/model.o ./src/view.o  ./src/main.d ./src/model.d ./src/view.d  Hp15c_calculator.exe
  
 
-17:32:38 Build Finished (took 147ms)
+11:09:04 Build Finished (took 139ms)
 

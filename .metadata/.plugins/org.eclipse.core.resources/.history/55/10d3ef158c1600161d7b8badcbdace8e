@@ -1,0 +1,7 @@
+Exception: STATUS_ACCESS_VIOLATION at eip=61151EFB
+eax=00000000 ebx=0000001F ecx=0061CBE8 edx=00000001 esi=0061D51C edi=0061CBE8
+ebp=00000000 esp=0061CBD0 program=K:\C-code\home\jimmi\c_development\ReadFile_WriteFile\a.exe, pid 4180, thread main
+cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
+Stack trace:
+Frame     Function  Args
+End of stack trace

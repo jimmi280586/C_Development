@@ -1,0 +1,7 @@
+11:09:04 **** Clean-only build of configuration Debug for project ReadFile_WriteFile ****
+make clean 
+rm -rf  ./Read.o ./Write.o  ./Read.d ./Write.d  ReadFile_WriteFile.exe
+ 
+
+11:09:04 Build Finished (took 136ms)
+
